@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		975C6A372CBE8D5200D3BD6A /* SwiftUICharts in Frameworks */ = {isa = PBXBuildFile; productRef = 975C6A362CBE8D5200D3BD6A /* SwiftUICharts */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		974C1C9E2CA42EEE004793FF /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -52,6 +56,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				975C6A372CBE8D5200D3BD6A /* SwiftUICharts in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -112,6 +117,7 @@
 			);
 			name = "Medical App";
 			packageProductDependencies = (
+				975C6A362CBE8D5200D3BD6A /* SwiftUICharts */,
 			);
 			productName = "Medical App";
 			productReference = 974C1C8D2CA42EED004793FF /* Medical App.app */;
@@ -186,7 +192,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 974C1C882CA42EED004793FF /* Build configuration list for PBXProject "Medical App" */;
+			buildConfigurationList = 974C1C882CA42EED004793FF /* Build configuration list for PBXProject "YFlow" */;
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -195,6 +201,9 @@
 			);
 			mainGroup = 974C1C842CA42EED004793FF;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				975C6A352CBE8D5200D3BD6A /* XCRemoteSwiftPackageReference "chartview" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 974C1C8E2CA42EED004793FF /* Products */;
 			projectDirPath = "";
@@ -393,11 +402,18 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Medical App/Medical App.entitlements";
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Medical App/Preview Content\"";
+				DEVELOPMENT_TEAM = 55ZY83XZR4;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Medical-App-Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = UFlow;
+				INFOPLIST_KEY_NSHealthShareUsageDescription = "Your health data will be used to display your fitness statistics such as steps, heart rate, and sleep data.</string>\n";
+				INFOPLIST_KEY_NSHealthUpdateUsageDescription = "Your health data will be used to track your fitness activities such as step count, heart rate, and sleep patterns.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -408,8 +424,9 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "korero-GmbH.Medical-App";
+				PRODUCT_BUNDLE_IDENTIFIER = "korero-GmbH.UFlow";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -421,11 +438,18 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Medical App/Medical App.entitlements";
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Medical App/Preview Content\"";
+				DEVELOPMENT_TEAM = 55ZY83XZR4;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Medical-App-Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = UFlow;
+				INFOPLIST_KEY_NSHealthShareUsageDescription = "Your health data will be used to display your fitness statistics such as steps, heart rate, and sleep data.</string>\n";
+				INFOPLIST_KEY_NSHealthUpdateUsageDescription = "Your health data will be used to track your fitness activities such as step count, heart rate, and sleep patterns.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -436,8 +460,9 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "korero-GmbH.Medical-App";
+				PRODUCT_BUNDLE_IDENTIFIER = "korero-GmbH.UFlow";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -515,7 +540,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		974C1C882CA42EED004793FF /* Build configuration list for PBXProject "Medical App" */ = {
+		974C1C882CA42EED004793FF /* Build configuration list for PBXProject "YFlow" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				974C1CAF2CA42EEE004793FF /* Debug */,
@@ -552,6 +577,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		975C6A352CBE8D5200D3BD6A /* XCRemoteSwiftPackageReference "chartview" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apppear/chartview.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.5.5;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		975C6A362CBE8D5200D3BD6A /* SwiftUICharts */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 975C6A352CBE8D5200D3BD6A /* XCRemoteSwiftPackageReference "chartview" */;
+			productName = SwiftUICharts;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 974C1C852CA42EED004793FF /* Project object */;
 }
